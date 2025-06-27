@@ -10,7 +10,7 @@
 ## 2. Deployed Portfolio Link
 
 - **GitHub Pages URL**:  
-  _[(Provide the live link to your deployed portfolio website)](https://magenta-gelato-be9cf7.netlify.app/)_
+  _[(Provide the live link to your deployed portfolio website)](https://magenta-gelato-be9cf7.netlify.app/)_(https://is-project-4th-year.github.io/build-your-portfolio-github-workflow-essentials-zubeir-adan/)
 
 ## 3. Learnings from the Git Crash Program
 
