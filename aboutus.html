@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>About Us – EduChain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Re-use the global stylesheet you created for the homepage -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific styling kept minimal and scoped -->
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+      color: #fff;
+      text-align: center;
+      padding: clamp(3rem, 10vw, 6rem) 1rem;
+    }
+    .about-hero h2 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+    .about-section {
+      background: #ffffff;
+      padding: 3rem 0;
+    }
+    .about-section h3 {
+      margin-top: 0;
+      color: #1e3a8a;
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .tech-card {
+      background: #f3f4f6;
+      padding: 1.25rem 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .tech-card h4 {
+      margin: 0.5rem 0;
+      color: #1e3a8a;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header & Navigation ===== -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <h1 class="logo"><a href="index.html">EduChain</a></h1>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="about-hero">
+    <div class="container">
+      <h2>Building Trust in Academic Credentials</h2>
+      <p>EduChain harnesses blockchain and decentralized identity to make certificate
+         verification instantaneous, secure, and fraud-proof.</p>
+    </div>
+  </section>
+
+  <!-- ===== Main About Section ===== -->
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h3>Our Mission</h3>
+        <p>
+          We believe every learner deserves credentials that are universally trusted.
+          EduChain empowers academic institutions to issue tamper-proof certificates,
+          and enables employers or other verifiers to confirm authenticity with a single click.
+          By eliminating manual checks and paperwork, we cut verification costs and fight
+          academic fraud at its root.
+        </p>
+
+        <h3>Core Technologies</h3>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <h4>Blockchain</h4>
+            <p>Immutable ledger on Ethereum securely stores certificate hashes.</p>
+          </div>
+          <div class="tech-card">
+            <h4>Smart Contracts</h4>
+            <p>Solidity contracts automate certificate issuance and verification logic.</p>
+          </div>
+          <div class="tech-card">
+            <h4>Decentralized Identity</h4>
+            <p>DIDs give institutions and students self-owned, verifiable identifiers.</p>
+          </div>
+          <div class="tech-card">
+            <h4>Verifiable Credentials</h4>
+            <p>W3C-standard VCs let any third party cryptographically verify certificates.</p>
+          </div>
+          <div class="tech-card">
+            <h4>IPFS Storage</h4>
+            <p>Decentralized file storage keeps original certificate PDFs tamper-resistant.</p>
+          </div>
+        </div>
+
+        <h3>How It Works</h3>
+        <p>
+          1️⃣ An institution hashes a PDF certificate and stores the hash on-chain.<br>
+          2️⃣ The student receives a verifiable credential linked to their decentralized identity.<br>
+          3️⃣ A verifier uploads the certificate; EduChain recomputes the hash and checks it
+          against the blockchain in seconds. If it matches, authenticity is proven.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; 2025 EduChain. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="https://github.com/your-org/educhain">GitHub</a></li>
+        <li><a href="mailto:support@educhain.org">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
